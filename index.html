@@ -126,6 +126,7 @@
             <h3>Lidar — C++ Graphics Engine</h3>
             <p>A graphics engine built with an ECS architecture, deferred rendering, shadow mapping and DDGI-style real-time global illumination. Includes a glTF asset pipeline, custom editor and client-server networking.</p>
             <div class="tags"><span>C++</span><span>OpenGL</span><span>EnTT</span><span>GameNetworkingSockets</span><span>ImGui</span><span>Tracy</span></div>
+            <button class="project-link" data-modal="lidar">Explore project ↗</button>
           </div>
         </article>
 
@@ -140,6 +141,7 @@
             <h3>Pediatric Upper-Limb Exoskeleton</h3>
             <p>Passive rehabilitation orthosis for children aged 7–17, 3D-printed in PLA and sensorized with seven IMUs and an ESP32.</p>
             <div class="tags"><span>ESP32</span><span>IMU</span><span>MATLAB</span><span>Robotics</span><span>3D Printing</span></div>
+            <button class="project-link" data-modal="exo">Explore project ↗</button>
           </div>
         </article>
 
@@ -154,6 +156,7 @@
             <h3>Applied AI &amp; Vision</h3>
             <p>Computer vision systems for object classification, combining OpenCV with YOLO-based detection in applied robotics projects.</p>
             <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>AI</span></div>
+            <button class="project-link" data-modal="vision">Explore project ↗</button>
           </div>
         </article>
       </div>
@@ -197,8 +200,7 @@
         </div>
       </div>
     </section>
-  </main>
-
+  </main>\n  <div class="modal" id="project-modal" aria-hidden="true">\n    <div class="modal-backdrop" data-close-modal></div>\n    <article class="modal-card" role="dialog" aria-modal="true">\n      <button class="modal-close" aria-label="Close" data-close-modal>×</button>\n      <div id="modal-content"></div>\n    </article>\n  </div>\n
   <footer>
     <span>© <span id="year"></span> Alejandro Carrillo Cerdá</span>
     <span>ROBOTICS / SOFTWARE / SYSTEMS</span>
