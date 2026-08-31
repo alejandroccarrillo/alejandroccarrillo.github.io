@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alejandro Carrillo Cerdá — Robotics / Software Engineer portfolio.">
+  <title>Alejandro Carrillo Cerdá — Robotics / Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="logo" href="#home">AC<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ROBOTICS / SOFTWARE ENGINEER</p>
+          <h1>Building systems<br><em>that move.</em></h1>
+          <p class="lead">Robotics Engineering graduate focused on C++, embedded systems, software verification, computer graphics and applied computer vision.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore projects <span>↗</span></a>
+            <a class="btn ghost" href="Alejandro_Carrillo_CV_EN.pdf" target="_blank">View CV</a>
+          </div>
+          <div class="availability"><span></span> Open to relocation</div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="orb"></div>
+          <div class="wire wire-a"></div>
+          <div class="wire wire-b"></div>
+          <div class="terminal">
+            <div class="terminal-top"><span></span><span></span><span></span><b>system.cpp</b></div>
+            <pre><code><i>01</i>  system.initialize();
+<i>02</i>  sensors.connect();
+<i>03</i>  renderer.start();
+<i>04</i>
+<i>05</i>  while (running) {
+<i>06</i>      world.update(dt);
+<i>07</i>      network.tick();
+<i>08</i>      frame.render();
+<i>09</i>  }</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div class="section-label reveal">01 / ABOUT</div>
+      <div class="content reveal">
+        <h2>Engineering with a<br><em>systems mindset.</em></h2>
+        <p>I'm Alejandro Carrillo Cerdá, a Robotics Engineering graduate based in Alicante, Spain. My experience spans flight-critical C++ software verification, embedded systems, graphics engine development, networking and computer vision.</p>
+        <p>I enjoy working close to the system — understanding how software, hardware and real-time constraints interact — and adapting quickly to new technical environments.</p>
+        <div class="facts">
+          <div><strong>2025–present</strong><span>Software Verification Engineer</span></div>
+          <div><strong>2020–2025</strong><span>Robotics Engineering — UA</span></div>
+          <div><strong>2023</strong><span>Erasmus+ — Luleå, Sweden</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <div class="section-label">02 / EXPERIENCE</div>
+        <h2>Where I've worked.</h2>
+      </div>
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-date">OCT 2025 — PRESENT</div>
+          <div>
+            <h3>Software Verification Engineer</h3>
+            <p class="company">Embention</p>
+            <ul>
+              <li>Verification of flight-critical C++ software for Amazon Prime Air's MK30 delivery drone on TI C2000.</li>
+              <li>Designed and executed unit tests with VectorCAST under DO-178C and JSF AV C++ coding standards.</li>
+              <li>Analysis of low-level code and compiler output for memory behaviour and real-time performance.</li>
+              <li>Daily work in a large Git-based codebase with code review and pull requests.</li>
+            </ul>
+            <div class="tags"><span>C++</span><span>DO-178C</span><span>VectorCAST</span><span>TI C2000</span><span>Git</span></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-date">JAN 2025 — APR 2025</div>
+          <div>
+            <h3>Robotics Engineer — Internship</h3>
+            <p class="company">AIJU · Instituto Tecnológico de Producto Infantil y Ocio</p>
+            <ul>
+              <li>Applied robotics to children's product and leisure projects.</li>
+              <li>Developed AI-based computer vision systems using OpenCV and YOLO for object classification.</li>
+            </ul>
+            <div class="tags"><span>Robotics</span><span>OpenCV</span><span>YOLO</span><span>Python</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-head reveal">
+        <div class="section-label">03 / PROJECTS</div>
+        <h2>Selected work.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project project-large reveal">
+          <div class="project-number">01</div>
+          <div class="project-visual graphics-visual">
+            <div class="grid3d"></div>
+            <div class="probe p1"></div><div class="probe p2"></div><div class="probe p3"></div>
+            <div class="hud">DDGI / COMPUTE SHADER / 20 Hz</div>
+          </div>
+          <div class="project-body">
+            <p class="eyebrow">PERSONAL PROJECT · 2025 — ONGOING</p>
+            <h3>Lidar — C++ Graphics Engine</h3>
+            <p>A graphics engine built with an ECS architecture, deferred rendering, shadow mapping and DDGI-style real-time global illumination. Includes a glTF asset pipeline, custom editor and client-server networking.</p>
+            <div class="tags"><span>C++</span><span>OpenGL</span><span>EnTT</span><span>GameNetworkingSockets</span><span>ImGui</span><span>Tracy</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-number">02</div>
+          <div class="project-visual exo-visual">
+            <div class="exo-ring"></div><div class="exo-arm"></div><div class="joint j1"></div><div class="joint j2"></div><div class="joint j3"></div>
+            <div class="hud">7 × IMU / ESP32 / I²C</div>
+          </div>
+          <div class="project-body">
+            <p class="eyebrow">BACHELOR'S THESIS · 2024 — 2025</p>
+            <h3>Pediatric Upper-Limb Exoskeleton</h3>
+            <p>Passive rehabilitation orthosis for children aged 7–17, 3D-printed in PLA and sensorized with seven IMUs and an ESP32.</p>
+            <div class="tags"><span>ESP32</span><span>IMU</span><span>MATLAB</span><span>Robotics</span><span>3D Printing</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-number">03</div>
+          <div class="project-visual vision-visual">
+            <div class="scan"></div><div class="bbox">OBJECT <b>0.94</b></div><div class="bbox b2">CLASS <b>0.89</b></div>
+            <div class="hud">YOLO / OPENCV / VISION</div>
+          </div>
+          <div class="project-body">
+            <p class="eyebrow">COMPUTER VISION</p>
+            <h3>Applied AI &amp; Vision</h3>
+            <p>Computer vision systems for object classification, combining OpenCV with YOLO-based detection in applied robotics projects.</p>
+            <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>AI</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section split skills-section">
+      <div class="section-label reveal">04 / TOOLBOX</div>
+      <div class="content reveal">
+        <h2>Tools I like<br><em>to build with.</em></h2>
+        <div class="skill-list">
+          <div class="skill"><span>01</span><b>Programming</b><p>C · C++ · Python</p></div>
+          <div class="skill"><span>02</span><b>Robotics &amp; Embedded</b><p>ROS · TI C2000 · I²C · IMUs · DO-178C</p></div>
+          <div class="skill"><span>03</span><b>Graphics &amp; Engines</b><p>OpenGL · ECS / EnTT · GameNetworkingSockets · ImGui · Tracy · spdlog</p></div>
+          <div class="skill"><span>04</span><b>Tools</b><p>VectorCAST · Git / GitHub / SmartGit · MATLAB · OpenCV · Autodesk · RobotStudio</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education">
+      <div class="section-head reveal">
+        <div class="section-label">05 / EDUCATION</div>
+        <h2>Learning never<br><em>stops.</em></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal"><span>2025 — PRESENT</span><h3>MSc Biomedical Engineering</h3><p>Universidad Internacional de Valencia</p></div>
+        <div class="edu-card reveal"><span>2020 — 2025</span><h3>BSc Robotics Engineering</h3><p>University of Alicante</p></div>
+        <div class="edu-card reveal"><span>AUG — DEC 2023</span><h3>Erasmus+ KA131</h3><p>Luleå University of Technology · Sweden</p></div>
+        <div class="edu-card reveal"><span>2023 — 2024</span><h3>European Study in Interactive Industrial Design</h3><p>University of Alicante</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">06 / CONTACT</p>
+        <h2>Let's build something<br><em>interesting.</em></h2>
+        <p>Interested in robotics, software engineering, embedded systems or graphics? I'd be happy to talk.</p>
+        <a class="email" href="mailto:alejandrocarrillo04@gmail.com">alejandrocarrillo04@gmail.com <span>↗</span></a>
+        <div class="socials">
+          <a href="https://linkedin.com/in/acarrilloc" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Alejandro Carrillo Cerdá</span>
+    <span>ROBOTICS / SOFTWARE / SYSTEMS</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
