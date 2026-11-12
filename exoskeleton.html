@@ -1,1 +1,123 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Pediatric Upper-Limb Exoskeleton — Alejandro Carrillo</title><link rel="stylesheet" href="style.css?v=6"></head><body><header class="nav"><a class="logo" href="index.html">AC<span>.</span></a><nav><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav></header><main><section class="section project-detail"><a class="back" href="index.html#projects">← Back to projects</a><p class="eyebrow">BACHELOR'S THESIS · UNIVERSITY OF ALICANTE · 2025</p><h1>Pediatric Upper-Limb Exoskeleton</h1><p class="detail-lead">Development and construction of a pediatric upper-limb exoskeleton for rehabilitation, combining mechanical design, 3D printing, inertial sensing, kinematic modelling and a virtual-reality interaction layer.</p><div class="detail-images"><img src="assets/exoskeleton-result.png" alt="Final exoskeleton prototype"><img src="assets/matlab-model.png" alt="MATLAB model of the exoskeleton"><img src="assets/sensor-system.png" alt="Sensor acquisition system"></div><div class="detail-columns"><div><h2>System architecture</h2><ul><li><b>7 × IMU</b> — Pololu AltIMU-10 v6</li><li><b>ESP32</b> — sensor acquisition</li><li><b>TCA9548A</b> — I²C multiplexing</li><li><b>MATLAB / Robotics Toolbox</b> — modelling and kinematics</li><li><b>PLA / 3D printing</b> — physical construction</li><li><b>Nintendo Switch controller</b> — interaction input</li><li><b>Unity / VR serious game</b> — rehabilitation environment</li></ul></div><div><h2>What I worked on</h2><p>The project covered the adaptation and printing of mechanical parts, assembly, sensor integration, movement acquisition and joint-angle calculation, followed by synchronization with a VR application. The prototype was functionally validated through testing.</p></div></div><div class="detail-actions"><a class="detail-btn" href="Alejandro_Carrillo_TFG_Exoskeleton.pdf" target="_blank">Read Bachelor's Thesis ↗</a></div></section></main><footer><span>© <span id="year"></span> Alejandro Carrillo Cerdá</span><span>ROBOTICS / SOFTWARE / SYSTEMS</span></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-ui-lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pediatric Upper-Limb Exoskeleton · Alejandro Carrillo Cerdá</title>
+  <meta name="title-en" content="Pediatric Upper-Limb Exoskeleton · Alejandro Carrillo Cerdá">
+  <meta name="title-es" content="Exoesqueleto pediátrico de miembro superior · Alejandro Carrillo Cerdá">
+  <meta name="description" content="Bachelor's thesis: a 3D-printed, sensorised pediatric rehabilitation exoskeleton with 7 IMUs, ESP32 firmware, Denavit-Hartenberg kinematics and VR integration.">
+  <meta property="og:image" content="https://alejandroccarrillo.github.io/assets/exo/assembled-assistive.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=7">
+  <script>(function(){var l;try{l=localStorage.getItem('lang')}catch(e){}if(!l){l=(navigator.language||'en').toLowerCase().indexOf('es')===0?'es':'en'}document.documentElement.setAttribute('data-ui-lang',l);document.documentElement.setAttribute('lang',l)})();</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">AC</span><span>Alejandro Carrillo</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html#about"><span data-lang="en">About</span><span data-lang="es">Sobre mí</span></a>
+        <a href="index.html#experience"><span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></a>
+        <a href="index.html#projects"><span data-lang="en">Projects</span><span data-lang="es">Proyectos</span></a>
+        <a href="index.html#skills"><span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></a>
+        <a href="index.html#contact"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="es" aria-pressed="false">ES</button></div>
+        <a class="btn btn-sm btn-primary" href="Alejandro_Carrillo_CV_EN.pdf" data-href-en="Alejandro_Carrillo_CV_EN.pdf" data-href-es="Alejandro_Carrillo_CV_ES.pdf" target="_blank" rel="noopener">CV</a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="detail-hero">
+      <a class="back" href="index.html#projects">← <span data-lang="en">Back to projects</span><span data-lang="es">Volver a proyectos</span></a>
+      <p class="kicker"><span data-lang="en">Bachelor's thesis · University of Alicante · HURO group · 2025</span><span data-lang="es">Trabajo Fin de Grado · Universidad de Alicante · grupo HURO · 2025</span></p>
+      <h1 data-lang="en">Pediatric upper-limb exoskeleton for rehabilitation</h1>
+      <h1 data-lang="es">Exoesqueleto pediátrico de miembro superior para rehabilitación</h1>
+      <p class="lead" data-lang="en">A passive, adjustable orthosis for children aged 7 to 17, designed and 3D-printed from scratch, sensorised to measure its own joint angles in real time, and connected to a virtual-reality game that makes rehabilitation more motivating.</p>
+      <p class="lead" data-lang="es">Una órtesis pasiva y ajustable para niños de 7 a 17 años, diseñada e impresa en 3D desde cero, sensorizada para medir sus propios ángulos articulares en tiempo real y conectada a un juego de realidad virtual que hace la rehabilitación más motivadora.</p>
+      <div class="spec-strip">
+        <div><b>7 × IMU</b><span>Pololu AltIMU-10 v6</span></div>
+        <div><b>ESP32</b><span data-lang="en">C++ firmware (Arduino)</span><span data-lang="es">firmware en C++ (Arduino)</span></div>
+        <div><b>TCA9548A</b><span data-lang="en">I²C multiplexer</span><span data-lang="es">multiplexor I²C</span></div>
+        <div><b>7 – 17</b><span data-lang="en">age range covered</span><span data-lang="es">rango de edad cubierto</span></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="gallery">
+        <figure class="wide reveal"><img src="assets/exo/assembled-assistive.jpg" alt="Assembled exoskeleton in assistive configuration" loading="lazy"><figcaption data-lang="en">The assembled prototype. Elastic bands can be placed in an assistive or a resistive configuration.</figcaption><figcaption data-lang="es">El prototipo montado. Las bandas elásticas pueden colocarse en configuración asistiva o resistiva.</figcaption></figure>
+        <figure class="reveal"><img src="assets/exo/cad-assembly.jpg" alt="CAD model of the full exoskeleton assembly" loading="lazy"><figcaption data-lang="en">Full assembly modelled in CAD before printing.</figcaption><figcaption data-lang="es">Montaje completo modelado en CAD antes de imprimir.</figcaption></figure>
+        <figure class="reveal"><img src="assets/exo/assembled-resistive.jpg" alt="Exoskeleton with elastic bands in resistive configuration" loading="lazy"><figcaption data-lang="en">Resistive configuration of the elastic bands.</figcaption><figcaption data-lang="es">Configuración resistiva de las bandas elásticas.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="cols-2">
+        <div class="prose reveal">
+          <h2 data-lang="en">What I built</h2><h2 data-lang="es">Qué construí</h2>
+          <ul data-lang="en">
+            <li><b>Mechanical design and printing.</b> Parts printed in PLA, with adjustable links so one device fits a wide age range, plus custom mounts for the sensors and for a game controller.</li>
+            <li><b>Sensing.</b> Seven IMUs read over I²C through a TCA9548A multiplexer by an ESP32, with firmware written in C++.</li>
+            <li><b>Joint angles.</b> Accelerometer and gyroscope fused with a complementary filter, after an initial calibration that removes sensor offset.</li>
+            <li><b>Kinematics.</b> A Denavit-Hartenberg model of the device in MATLAB to visualise the arm and compute forward kinematics.</li>
+            <li><b>Dynamics.</b> A dynamic simulation in Autodesk Inventor to compute joint torques, as groundwork for future motorisation.</li>
+          </ul>
+          <ul data-lang="es">
+            <li><b>Diseño mecánico e impresión.</b> Piezas impresas en PLA, con eslabones ajustables para que un solo dispositivo sirva para un rango amplio de edades, y soportes propios para los sensores y para un mando de juego.</li>
+            <li><b>Sensorización.</b> Siete IMU leídas por I²C a través de un multiplexor TCA9548A desde una ESP32, con firmware escrito en C++.</li>
+            <li><b>Ángulos articulares.</b> Acelerómetro y giroscopio fusionados con un filtro complementario, tras una calibración inicial que corrige el offset de los sensores.</li>
+            <li><b>Cinemática.</b> Un modelo Denavit-Hartenberg del dispositivo en MATLAB para visualizar el brazo y calcular la cinemática directa.</li>
+            <li><b>Dinámica.</b> Una simulación dinámica en Autodesk Inventor para calcular los pares articulares, como base para una futura motorización.</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h2 style="font-size:26px;margin-bottom:18px" data-lang="en">System</h2><h2 style="font-size:26px;margin-bottom:18px" data-lang="es">Sistema</h2>
+          <ul class="kv">
+            <li><b>IMU</b><span>7 × Pololu AltIMU-10 v6</span></li>
+            <li><b data-lang="en">Controller</b><b data-lang="es">Controlador</b><span>ESP32 · C++ (Arduino)</span></li>
+            <li><b data-lang="en">Bus</b><b data-lang="es">Bus</b><span>I²C · TCA9548A</span></li>
+            <li><b data-lang="en">Sensor fusion</b><b data-lang="es">Fusión de sensores</b><span data-lang="en">complementary filter + offset calibration</span><span data-lang="es">filtro complementario + calibración de offset</span></li>
+            <li><b data-lang="en">Modelling</b><b data-lang="es">Modelado</b><span>MATLAB · Denavit-Hartenberg</span></li>
+            <li><b data-lang="en">Simulation</b><b data-lang="es">Simulación</b><span>Autodesk Inventor</span></li>
+            <li><b data-lang="en">Build</b><b data-lang="es">Fabricación</b><span data-lang="en">3D-printed PLA, elastic bands</span><span data-lang="es">PLA impreso en 3D, bandas elásticas</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="reveal" data-lang="en">Electronics and modelling</h2><h2 class="reveal" data-lang="es">Electrónica y modelado</h2>
+      <div class="gallery">
+        <figure class="reveal"><img src="assets/exo/wiring-schematic.jpg" alt="Wiring schematic: ESP32, I2C hub and IMUs" loading="lazy"><figcaption data-lang="en">Wiring: the ESP32 talks to every IMU through the I²C hub.</figcaption><figcaption data-lang="es">Conexionado: la ESP32 se comunica con cada IMU a través del hub I²C.</figcaption></figure>
+        <figure class="reveal"><img src="assets/exo/matlab-dh-model.jpg" alt="MATLAB Denavit-Hartenberg model of the exoskeleton" loading="lazy"><figcaption data-lang="en">Denavit-Hartenberg model of the device in MATLAB.</figcaption><figcaption data-lang="es">Modelo Denavit-Hartenberg del dispositivo en MATLAB.</figcaption></figure>
+        <figure class="reveal"><img src="assets/exo/part-imu-base.jpg" alt="3D-printed IMU base" loading="lazy"><figcaption data-lang="en">3D-printed base for each IMU (seven identical parts).</figcaption><figcaption data-lang="es">Base impresa en 3D para cada IMU (siete piezas idénticas).</figcaption></figure>
+        <figure class="reveal"><img src="assets/exo/part-controller-mount.jpg" alt="3D-printed mount for the game controller" loading="lazy"><figcaption data-lang="en">Mount for the game controller on the end effector, used for the VR integration.</figcaption><figcaption data-lang="es">Soporte del mando de juego en el extremo, usado para la integración con realidad virtual.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="prose reveal">
+        <h2 data-lang="en">Integration and validation</h2><h2 data-lang="es">Integración y validación</h2>
+        <p data-lang="en">I worked with a Multimedia Engineering student whose thesis was a VR serious game for upper-limb rehabilitation. A game controller is mounted on the exoskeleton's end effector, so the user plays by moving the device, while my sensor system provides real movement data. The result is a working device, a sensor system that tracks its motion and a game that makes exercises more engaging.</p>
+        <p data-lang="es">Colaboré con un estudiante de Ingeniería Multimedia cuyo TFG era un juego serio de realidad virtual para la rehabilitación del miembro superior. Un mando de juego va montado en el extremo del exoesqueleto, de modo que el usuario juega moviendo el dispositivo, mientras mi sistema de sensores aporta datos reales de movimiento. El resultado es un dispositivo funcional, un sistema de sensores que sigue su movimiento y un juego que hace los ejercicios más atractivos.</p>
+        <p data-lang="en">The device was tested with two pediatric users, aged 7 and 17, under parental supervision, which confirmed the adjustable range. The sensor readings were fed into the MATLAB model to check that it reproduced the real motion.</p>
+        <p data-lang="es">El dispositivo se probó con dos usuarios pediátricos, de 7 y 17 años, bajo supervisión de sus padres, lo que confirmó el rango de ajuste. Las lecturas de los sensores se introdujeron en el modelo de MATLAB para comprobar que reproducía el movimiento real.</p>
+        <h2 style="margin-top:28px" data-lang="en">Next steps I identified</h2><h2 style="margin-top:28px" data-lang="es">Siguientes pasos que identifiqué</h2>
+        <ul data-lang="en"><li>Stronger materials such as PETG or ABS.</li><li>Wireless sensors to reduce cabling.</li><li>A portable design without the fixed stand.</li><li>Motorisation, based on the torque study.</li><li>Clinical validation with patients.</li></ul>
+        <ul data-lang="es"><li>Materiales más resistentes, como PETG o ABS.</li><li>Sensores inalámbricos para reducir el cableado.</li><li>Un diseño portátil sin soporte fijo.</li><li>Motorización, a partir del estudio de pares.</li><li>Validación clínica con pacientes.</li></ul>
+        <p style="margin-top:22px"><a class="btn" href="Alejandro_Carrillo_TFG_Exoskeleton.pdf" target="_blank" rel="noopener"><span data-lang="en">Read the full thesis (PDF, Spanish)</span><span data-lang="es">Leer el TFG completo (PDF)</span></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© <span id="year">2026</span> Alejandro Carrillo Cerdá</span><a href="index.html#contact" style="color:inherit"><span data-lang="en">Get in touch →</span><span data-lang="es">Contactar →</span></a></div></footer>
+  <script src="script.js?v=7"></script>
+</body>
+</html>

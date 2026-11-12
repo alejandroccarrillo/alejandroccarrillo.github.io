@@ -1,1 +1,108 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Lidar — C++ Graphics Engine — Alejandro Carrillo</title><link rel="stylesheet" href="style.css?v=6"></head><body><header class="nav"><a class="logo" href="index.html">AC<span>.</span></a><nav><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav></header><main><section class="section project-detail"><a class="back" href="index.html#projects">← Back to projects</a><p class="eyebrow">PERSONAL PROJECT · C++ / REAL-TIME GRAPHICS</p><h1>Lidar — C++ Graphics Engine</h1><p class="detail-lead">A custom graphics engine focused on real-time rendering, clean architecture, profiling and multiplayer experimentation.</p><div class="detail-visual"><span>C++</span><span>OPENGL</span><span>ECS</span><span>NETWORKING</span></div><div class="detail-columns"><div><h2>Technical stack</h2><ul><li><b>Architecture</b> — ECS / EnTT</li><li><b>Rendering</b> — deferred rendering, shadows and compute shaders</li><li><b>Global illumination</b> — DDGI-style approach</li><li><b>Networking</b> — client/server at 20 Hz</li><li><b>Tooling</b> — ImGui, ImPlot, Tracy, spdlog</li><li><b>Assets</b> — glTF pipeline</li></ul></div><div><h2>Project</h2><p>A personal C++ codebase where I experiment with engine architecture, rendering systems, profiling and networking. The source repository is private, so this page documents the technical work without exposing source code.</p></div></div></section></main><footer><span>© <span id="year"></span> Alejandro Carrillo Cerdá</span><span>ROBOTICS / SOFTWARE / SYSTEMS</span></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-ui-lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lidar · C++23 Graphics Engine · Alejandro Carrillo Cerdá</title>
+  <meta name="title-en" content="Lidar · C++23 Graphics Engine · Alejandro Carrillo Cerdá">
+  <meta name="title-es" content="Lidar · Motor gráfico en C++23 · Alejandro Carrillo Cerdá">
+  <meta name="description" content="Lidar: a C++23 engine with ECS architecture, deferred rendering, DDGI-style global illumination and client-server networking.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=7">
+  <script>(function(){var l;try{l=localStorage.getItem('lang')}catch(e){}if(!l){l=(navigator.language||'en').toLowerCase().indexOf('es')===0?'es':'en'}document.documentElement.setAttribute('data-ui-lang',l);document.documentElement.setAttribute('lang',l)})();</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">AC</span><span>Alejandro Carrillo</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html#about"><span data-lang="en">About</span><span data-lang="es">Sobre mí</span></a>
+        <a href="index.html#experience"><span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></a>
+        <a href="index.html#projects"><span data-lang="en">Projects</span><span data-lang="es">Proyectos</span></a>
+        <a href="index.html#skills"><span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></a>
+        <a href="index.html#contact"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="es" aria-pressed="false">ES</button></div>
+        <a class="btn btn-sm btn-primary" href="Alejandro_Carrillo_CV_EN.pdf" data-href-en="Alejandro_Carrillo_CV_EN.pdf" data-href-es="Alejandro_Carrillo_CV_ES.pdf" target="_blank" rel="noopener">CV</a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="detail-hero">
+      <a class="back" href="index.html#projects">← <span data-lang="en">Back to projects</span><span data-lang="es">Volver a proyectos</span></a>
+      <p class="kicker"><span data-lang="en">Personal project · 2025 – ongoing · team of 2</span><span data-lang="es">Proyecto personal · 2025 – en curso · equipo de 2</span></p>
+      <h1 data-lang="en">Lidar, a C++23 graphics engine with its own networking</h1>
+      <h1 data-lang="es">Lidar, un motor gráfico en C++23 con red propia</h1>
+      <p class="lead" data-lang="en">A personal engine I build with a friend in pair programming, to go deep on modern C++, engine architecture, real-time rendering, networking and profiling.</p>
+      <p class="lead" data-lang="es">Un motor propio que desarrollo con un amigo en pair programming, para profundizar en C++ moderno, arquitectura de motores, renderizado en tiempo real, redes y profiling.</p>
+      <div class="spec-strip">
+        <div><b>C++23</b><span data-lang="en">modern C++</span><span data-lang="es">C++ moderno</span></div>
+        <div><b>ECS</b><span>EnTT</span></div>
+        <div><b>DDGI</b><span data-lang="en">real-time global illumination</span><span data-lang="es">iluminación global en tiempo real</span></div>
+        <div><b>20 Hz</b><span data-lang="en">fixed-tick server</span><span data-lang="es">servidor a tick fijo</span></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="reveal" data-lang="en">Architecture</h2><h2 class="reveal" data-lang="es">Arquitectura</h2>
+      <div class="diagram reveal">
+        <svg viewBox="0 0 900 430" role="img" aria-label="Lidar architecture diagram">
+          <rect class="dg-bg" width="900" height="430" rx="10"/>
+          <rect class="dg-box dark" x="300" y="28" width="300" height="70" rx="12"/>
+          <text class="dg-w" x="450" y="58" text-anchor="middle">Shared C++23 codebase</text>
+          <text class="dg-ws" x="450" y="78" text-anchor="middle">ECS (EnTT) · components · systems · glTF assets</text>
+          <path class="dg-line" d="M360 98 V140 H150 V170"/><path class="dg-line" d="M450 98 V170"/><path class="dg-line" d="M540 98 V140 H750 V170"/>
+          <rect class="dg-box" x="40" y="170" width="220" height="150" rx="12"/>
+          <text class="dg-t" x="150" y="198" text-anchor="middle">Client</text>
+          <text class="dg-s" x="150" y="224" text-anchor="middle">deferred rendering</text>
+          <text class="dg-s" x="150" y="244" text-anchor="middle">G-buffer · shadows · RSM</text>
+          <text class="dg-s" x="150" y="264" text-anchor="middle">DDGI-style probe grid</text>
+          <text class="dg-s" x="150" y="284" text-anchor="middle">compute shaders · OpenGL</text>
+          <rect class="dg-box acc" x="340" y="170" width="220" height="150" rx="12"/>
+          <text class="dg-t" x="450" y="198" text-anchor="middle">Server</text>
+          <text class="dg-s" x="450" y="224" text-anchor="middle">fixed tick at 20 Hz</text>
+          <text class="dg-s" x="450" y="244" text-anchor="middle">typed packets</text>
+          <text class="dg-s" x="450" y="264" text-anchor="middle">reusable buffer</text>
+          <text class="dg-s" x="450" y="284" text-anchor="middle">GameNetworkingSockets</text>
+          <rect class="dg-box" x="640" y="170" width="220" height="150" rx="12"/>
+          <text class="dg-t" x="750" y="198" text-anchor="middle">Editor</text>
+          <text class="dg-s" x="750" y="224" text-anchor="middle">ImGui · ImPlot</text>
+          <text class="dg-s" x="750" y="244" text-anchor="middle">network telemetry</text>
+          <text class="dg-s" x="750" y="264" text-anchor="middle">ping · packets by type</text>
+          <text class="dg-s" x="750" y="284" text-anchor="middle">bytes received</text>
+          <path class="dg-line" d="M260 245 H340" stroke-dasharray="5 5"/><path class="dg-line" d="M560 245 H640" stroke-dasharray="5 5"/>
+          <rect class="dg-box" x="300" y="356" width="300" height="48" rx="10"/>
+          <text class="dg-t" x="450" y="378" text-anchor="middle">Tooling</text>
+          <text class="dg-s" x="450" y="395" text-anchor="middle">Tracy profiling · spdlog logging</text>
+        </svg>
+      </div>
+      <p class="note reveal" data-lang="en">The source code lives in a private repository, so this page describes the work and its architecture without screenshots or code.</p>
+      <p class="note reveal" data-lang="es">El código está en un repositorio privado, así que esta página describe el trabajo y su arquitectura sin capturas ni código.</p>
+    </section>
+
+    <section class="detail-section">
+      <div class="cols-2">
+        <div class="prose reveal">
+          <h2 data-lang="en">Rendering</h2><h2 data-lang="es">Renderizado</h2>
+          <ul data-lang="en"><li>Deferred pipeline with a G-buffer, shadow mapping and reflective shadow maps (RSM).</li><li>Real-time global illumination through a DDGI-style grid of probes, computed in compute shaders.</li><li>glTF asset loading with tinygltf.</li></ul>
+          <ul data-lang="es"><li>Pipeline diferido con G-buffer, sombras y reflective shadow maps (RSM).</li><li>Iluminación global en tiempo real mediante una rejilla de probes tipo DDGI, calculada en compute shaders.</li><li>Carga de assets glTF con tinygltf.</li></ul>
+        </div>
+        <div class="prose reveal">
+          <h2 data-lang="en">Networking and tooling</h2><h2 data-lang="es">Red y herramientas</h2>
+          <ul data-lang="en"><li>Client-server architecture with GameNetworkingSockets, typed packets and a fixed-tick server at 20 Hz with a reusable buffer.</li><li>Network telemetry visible in the editor: ping, packets by type and bytes received.</li><li>One codebase that builds three executables: client, server and editor.</li><li>Tracy for profiling and spdlog for logging.</li></ul>
+          <ul data-lang="es"><li>Arquitectura cliente-servidor con GameNetworkingSockets, paquetes tipados y un servidor a tick fijo de 20 Hz con buffer reutilizable.</li><li>Telemetría de red visible en el editor: ping, paquetes por tipo y bytes recibidos.</li><li>Un único codebase que genera tres ejecutables: cliente, servidor y editor.</li><li>Tracy para profiling y spdlog para logging.</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© <span id="year">2026</span> Alejandro Carrillo Cerdá</span><a href="index.html#contact" style="color:inherit"><span data-lang="en">Get in touch →</span><span data-lang="es">Contactar →</span></a></div></footer>
+  <script src="script.js?v=7"></script>
+</body>
+</html>

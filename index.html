@@ -1,209 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ui-lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alejandro Carrillo Cerdá — Robotics / Software Engineer portfolio.">
-  <title>Alejandro Carrillo Cerdá — Robotics / Software Engineer</title>
+  <title>Alejandro Carrillo Cerdá · Robotics & Embedded Software Engineer</title>
+  <meta name="title-en" content="Alejandro Carrillo Cerdá · Robotics & Embedded Software Engineer">
+  <meta name="title-es" content="Alejandro Carrillo Cerdá · Ingeniero de Robótica y Software Embebido">
+  <meta name="description" content="Robotics Engineer working on flight-critical C++ (DO-178C) for Amazon Prime Air's MK30 drone. Embedded C/C++, robotics, computer vision and a C++23 graphics engine.">
+  <meta property="og:title" content="Alejandro Carrillo Cerdá · Robotics & Embedded Software Engineer">
+  <meta property="og:description" content="Flight-critical C++ under DO-178C, a sensorised pediatric exoskeleton, robot vision and a C++23 engine.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alejandroccarrillo.github.io/">
+  <meta property="og:image" content="https://alejandroccarrillo.github.io/assets/exo/assembled-assistive.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
+  <script>(function(){var l;try{l=localStorage.getItem('lang')}catch(e){}if(!l){l=(navigator.language||'en').toLowerCase().indexOf('es')===0?'es':'en'}document.documentElement.setAttribute('data-ui-lang',l);document.documentElement.setAttribute('lang',l)})();</script>
 </head>
 <body>
-  <div class="noise"></div>
   <header class="nav">
-    <a class="logo" href="#home">AC<span>.</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="brand-mark">AC</span><span>Alejandro Carrillo</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about"><span data-lang="en">About</span><span data-lang="es">Sobre mí</span></a>
+        <a href="#experience"><span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></a>
+        <a href="#projects"><span data-lang="en">Projects</span><span data-lang="es">Proyectos</span></a>
+        <a href="#skills"><span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></a>
+        <a href="#contact"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-set="en" aria-pressed="true">EN</button>
+          <button type="button" data-set="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="btn btn-sm btn-primary" href="Alejandro_Carrillo_CV_EN.pdf" data-href-en="Alejandro_Carrillo_CV_EN.pdf" data-href-es="Alejandro_Carrillo_CV_ES.pdf" target="_blank" rel="noopener">CV</a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">ROBOTICS / SOFTWARE ENGINEER</p>
-          <h1>Building systems<br><em>that move.</em></h1>
-          <p class="lead">Robotics Engineering graduate focused on C++, embedded systems, software verification, computer graphics and applied computer vision.</p>
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="status"><i></i>
+            <span data-lang="en">Alicante, Spain · open to relocation and remote</span>
+            <span data-lang="es">Alicante, España · disponible para reubicación y remoto</span>
+          </div>
+          <h1>Alejandro Carrillo Cerdá</h1>
+          <p class="role" data-lang="en">Robotics Engineer · <b>Embedded C/C++ & robotics software</b></p>
+          <p class="role" data-lang="es">Ingeniero en Robótica · <b>C/C++ embebido y software para robótica</b></p>
+          <p class="lead" data-lang="en">I work on flight-critical C++ for Amazon Prime Air's MK30 delivery drone under DO-178C. Outside work I build systems end to end: a sensorised pediatric exoskeleton, robot vision for pick-and-place, and a C++23 graphics engine with its own networking.</p>
+          <p class="lead" data-lang="es">Trabajo en software de vuelo crítico en C++ para el dron de reparto MK30 de Amazon Prime Air, bajo DO-178C. Fuera del trabajo construyo sistemas de principio a fin: un exoesqueleto pediátrico sensorizado, visión artificial para pick-and-place y un motor gráfico en C++23 con red propia.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#projects">Explore projects <span>↗</span></a>
-            <a class="btn ghost" href="Alejandro_Carrillo_CV_EN.pdf" target="_blank">View CV</a>
+            <a class="btn btn-primary" href="#projects"><span data-lang="en">See projects</span><span data-lang="es">Ver proyectos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn" href="Alejandro_Carrillo_CV_EN.pdf" data-href-en="Alejandro_Carrillo_CV_EN.pdf" data-href-es="Alejandro_Carrillo_CV_ES.pdf" target="_blank" rel="noopener"><span data-lang="en">Download CV</span><span data-lang="es">Descargar CV</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
           </div>
-          <div class="availability"><span></span> Open to relocation</div>
-        </div>
-        <div class="hero-art reveal">
-          <div class="orb"></div>
-          <div class="wire wire-a"></div>
-          <div class="wire wire-b"></div>
-          <div class="terminal">
-            <div class="terminal-top"><span></span><span></span><span></span><b>system.cpp</b></div>
-            <pre><code><i>01</i>  system.initialize();
-<i>02</i>  sensors.connect();
-<i>03</i>  renderer.start();
-<i>04</i>
-<i>05</i>  while (running) {
-<i>06</i>      world.update(dt);
-<i>07</i>      network.tick();
-<i>08</i>      frame.render();
-<i>09</i>  }</code></pre>
+          <div class="hero-links">
+            <a href="https://linkedin.com/in/acarrilloc" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/alejandroccarrillo" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:alejandrocarrillo04@gmail.com">alejandrocarrillo04@gmail.com</a>
           </div>
         </div>
-      </div>
-      <div class="scroll-cue">SCROLL <span>↓</span></div>
-    </section>
 
-    <section id="about" class="section split">
-      <div class="section-label reveal">01 / ABOUT</div>
-      <div class="content reveal">
-        <h2>Engineering with a<br><em>systems mindset.</em></h2>
-        <p>I'm Alejandro Carrillo Cerdá, a Robotics Engineering graduate based in Alicante, Spain. My experience spans flight-critical C++ software verification, embedded systems, graphics engine development, networking and computer vision.</p>
-        <p>I enjoy working close to the system — understanding how software, hardware and real-time constraints interact — and adapting quickly to new technical environments.</p>
-        <div class="facts">
-          <div><strong>2025–present</strong><span>Software Verification Engineer</span></div>
-          <div><strong>2020–2025</strong><span>Robotics Engineering — UA</span></div>
-          <div><strong>2023</strong><span>Erasmus+ — Luleå, Sweden</span></div>
-        </div>
+        <aside class="spec-card reveal" aria-label="Highlights">
+          <div class="spec-head"><span data-lang="en">At a glance</span><span data-lang="es">En resumen</span><span>2025 · 2026</span></div>
+          <div class="metrics">
+            <div class="metric"><b>~500</b><span data-lang="en">unit tests on flight-critical C++ (VectorCAST)</span><span data-lang="es">pruebas unitarias en C++ de vuelo crítico (VectorCAST)</span></div>
+            <div class="metric"><b>~100</b><span data-lang="en">defects found before certification</span><span data-lang="es">defectos detectados antes de la certificación</span></div>
+            <div class="metric"><b>7 IMU</b><span data-lang="en">sensor network in my pediatric exoskeleton</span><span data-lang="es">red de sensores de mi exoesqueleto pediátrico</span></div>
+            <div class="metric"><b>C++23</b><span data-lang="en">modern C++ in my own engine, C++03 in certified flight code</span><span data-lang="es">C++ moderno en mi motor, C++03 en código de vuelo certificado</span></div>
+          </div>
+          <p class="spec-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span data-lang="en">DO-178C · JSF AV C++ · TI C2000 · certification documentation for audits</span>
+            <span data-lang="es">DO-178C · JSF AV C++ · TI C2000 · documentación de certificación para auditorías</span>
+          </p>
+        </aside>
       </div>
     </section>
 
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <div class="about-text reveal">
+          <p class="kicker"><span data-lang="en">About</span><span data-lang="es">Sobre mí</span></p>
+          <h2 class="section-title" data-lang="en">Rigour from certified software, curiosity from robotics.</h2>
+          <h2 class="section-title" data-lang="es">El rigor del software certificado y la curiosidad de la robótica.</h2>
+          <p data-lang="en">I graduated in Robotics Engineering at the University of Alicante, with an Erasmus+ semester in Luleå, Sweden. Since October 2025 I have been at Embention, verifying the flight software of a commercial delivery drone under DO-178C: writing unit tests, reporting defects and preparing certification documentation.</p>
+          <p data-lang="es">Me gradué en Ingeniería Robótica en la Universidad de Alicante, con un semestre Erasmus+ en Luleå (Suecia). Desde octubre de 2025 estoy en Embention, verificando el software de vuelo de un dron de reparto comercial bajo DO-178C: pruebas unitarias, reporte de defectos y documentación de certificación.</p>
+          <p data-lang="en">What I enjoy most is building: hardware, firmware and software working together on something real. I am looking for a role where I design and develop robotics or embedded software in a team that talks openly and helps each other, and in the longer term I want to grow towards technical project management.</p>
+          <p data-lang="es">Lo que más disfruto es construir: hardware, firmware y software funcionando juntos en algo real. Busco un puesto donde diseñar y desarrollar software de robótica o embebido, en un equipo que se comunique y se ayude, y a más largo plazo quiero crecer hacia la gestión técnica de proyectos.</p>
+          <p class="muted" data-lang="en">Away from the keyboard I coordinate a youth association with about 30 volunteer monitors.</p>
+          <p class="muted" data-lang="es">Fuera del teclado coordino una asociación juvenil con unos 30 monitores voluntarios.</p>
+        </div>
+        <dl class="facts reveal">
+          <div><dt data-lang="en">Now</dt><dt data-lang="es">Ahora</dt><dd>Software Verification Engineer · Embention</dd></div>
+          <div><dt data-lang="en">Based in</dt><dt data-lang="es">Ubicación</dt><dd data-lang="en">Alicante, Spain · open to relocation</dd><dd data-lang="es">Alicante, España · abierto a reubicarme</dd></div>
+          <div><dt data-lang="en">Degree</dt><dt data-lang="es">Formación</dt><dd data-lang="en">BSc Robotics Engineering, University of Alicante</dd><dd data-lang="es">Grado en Ingeniería Robótica, Universidad de Alicante</dd></div>
+          <div><dt data-lang="en">Languages</dt><dt data-lang="es">Idiomas</dt><dd data-lang="en">Spanish (native) · English (B2, daily use at work) · Valencian (B1)</dd><dd data-lang="es">Castellano (nativo) · Inglés (B2, uso diario en el trabajo) · Valenciano (B1)</dd></div>
+          <div><dt data-lang="en">Looking for</dt><dt data-lang="es">Busco</dt><dd data-lang="en">Robotics, embedded C/C++ or medical robotics roles</dd><dd data-lang="es">Puestos de robótica, C/C++ embebido o robótica médica</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
     <section id="experience" class="section">
-      <div class="section-head reveal">
-        <div class="section-label">02 / EXPERIENCE</div>
-        <h2>Where I've worked.</h2>
-      </div>
-      <div class="timeline">
-        <article class="job reveal">
-          <div class="job-date">OCT 2025 — PRESENT</div>
-          <div>
-            <h3>Software Verification Engineer</h3>
-            <p class="company">Embention</p>
-            <ul>
-              <li>Verification of flight-critical C++ software for Amazon Prime Air's MK30 delivery drone on TI C2000.</li>
-              <li>Designed and executed unit tests with VectorCAST under DO-178C and JSF AV C++ coding standards.</li>
-              <li>Analysis of low-level code and compiler output for memory behaviour and real-time performance.</li>
-              <li>Daily work in a large Git-based codebase with code review and pull requests.</li>
-            </ul>
-            <div class="tags"><span>C++</span><span>DO-178C</span><span>VectorCAST</span><span>TI C2000</span><span>Git</span></div>
-          </div>
-        </article>
-        <article class="job reveal">
-          <div class="job-date">JAN 2025 — APR 2025</div>
-          <div>
-            <h3>Robotics Engineer — Internship</h3>
-            <p class="company">AIJU · Instituto Tecnológico de Producto Infantil y Ocio</p>
-            <ul>
-              <li>Applied robotics to children's product and leisure projects.</li>
-              <li>Developed AI-based computer vision systems using OpenCV and YOLO for object classification.</li>
-            </ul>
-            <div class="tags"><span>Robotics</span><span>OpenCV</span><span>YOLO</span><span>Python</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects-section">
-      <div class="section-head reveal">
-        <div class="section-label">03 / PROJECTS</div>
-        <h2>Selected work.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project project-large reveal">
-          <div class="project-number">01</div>
-          <div class="project-visual graphics-visual">
-            <div class="grid3d"></div>
-            <div class="probe p1"></div><div class="probe p2"></div><div class="probe p3"></div>
-            <div class="hud">DDGI / COMPUTE SHADER / 20 Hz</div>
-          </div>
-          <div class="project-body">
-            <p class="eyebrow">PERSONAL PROJECT · 2025 — ONGOING</p>
-            <h3>Lidar — C++ Graphics Engine</h3>
-            <p>A graphics engine built with an ECS architecture, deferred rendering, shadow mapping and DDGI-style real-time global illumination. Includes a glTF asset pipeline, custom editor and client-server networking.</p>
-            <div class="tags"><span>C++</span><span>OpenGL</span><span>EnTT</span><span>GameNetworkingSockets</span><span>ImGui</span><span>Tracy</span></div>
-            <a class="project-link" href="lidar.html">Explore project ↗</a>
-          </div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-number">02</div>
-          <div class="project-visual exo-visual">
-            <div class="exo-ring"></div><div class="exo-arm"></div><div class="joint j1"></div><div class="joint j2"></div><div class="joint j3"></div>
-            <div class="hud">7 × IMU / ESP32 / I²C</div>
-          </div>
-          <div class="project-body">
-            <p class="eyebrow">BACHELOR'S THESIS · 2024 — 2025</p>
-            <h3>Pediatric Upper-Limb Exoskeleton</h3>
-            <p>Passive rehabilitation orthosis for children aged 7–17, 3D-printed in PLA and sensorized with seven IMUs and an ESP32.</p>
-            <div class="tags"><span>ESP32</span><span>IMU</span><span>MATLAB</span><span>Robotics</span><span>3D Printing</span></div>
-            <a class="project-link" href="exoskeleton.html">Explore project ↗</a>
-          </div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-number">03</div>
-          <div class="project-visual vision-visual">
-            <div class="scan"></div><div class="bbox">OBJECT <b>0.94</b></div><div class="bbox b2">CLASS <b>0.89</b></div>
-            <div class="hud">YOLO / OPENCV / VISION</div>
-          </div>
-          <div class="project-body">
-            <p class="eyebrow">COMPUTER VISION</p>
-            <h3>Applied AI &amp; Vision</h3>
-            <p>Computer vision systems for object classification, combining OpenCV with YOLO-based detection in applied robotics projects.</p>
-            <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>AI</span></div>
-            <a class="project-link" href="vision.html">Explore project ↗</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section split skills-section">
-      <div class="section-label reveal">04 / TOOLBOX</div>
-      <div class="content reveal">
-        <h2>Tools I like<br><em>to build with.</em></h2>
-        <div class="skill-list">
-          <div class="skill"><span>01</span><b>Programming</b><p>C · C++ · Python</p></div>
-          <div class="skill"><span>02</span><b>Robotics &amp; Embedded</b><p>ROS · TI C2000 · I²C · IMUs · DO-178C</p></div>
-          <div class="skill"><span>03</span><b>Graphics &amp; Engines</b><p>OpenGL · ECS / EnTT · GameNetworkingSockets · ImGui · Tracy · spdlog</p></div>
-          <div class="skill"><span>04</span><b>Tools</b><p>VectorCAST · Git / GitHub / SmartGit · MATLAB · OpenCV · Autodesk · RobotStudio</p></div>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker"><span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></p>
+          <h2 class="section-title" data-lang="en">Where I've worked</h2>
+          <h2 class="section-title" data-lang="es">Dónde he trabajado</h2>
+        </div>
+        <div class="timeline">
+          <article class="job reveal">
+            <div class="job-meta">
+              <span class="date" data-lang="en">Oct 2025 – Present</span><span class="date" data-lang="es">Oct. 2025 – Actualidad</span>
+              <span>Alicante, <span data-lang="en">Spain</span><span data-lang="es">España</span></span>
+            </div>
+            <div>
+              <h3 data-lang="en">Software Verification Engineer</h3><h3 data-lang="es">Ingeniero de Verificación de Software</h3>
+              <p class="org">Embention</p>
+              <ul data-lang="en">
+                <li>Flight-critical C++ for <b>Amazon Prime Air's MK30</b> delivery drone on the TI C2000 real-time platform, under <b>DO-178C</b> and the JSF AV C++ coding standard.</li>
+                <li>Designed and executed <b>about 500 unit tests</b> with VectorCAST across 3 projects, in a team of 10–15 engineers.</li>
+                <li>Found and reported <b>about 100 defects</b> in flight code before certification.</li>
+                <li>Contributed to product <b>certification</b>, authoring DO-178C audit documentation (TD, SVCPS, SVR).</li>
+                <li>Analysed low-level code and compiler output to verify memory usage and real-time performance on target.</li>
+                <li>Daily work in a large Git codebase with pull-request code review.</li>
+              </ul>
+              <ul data-lang="es">
+                <li>Software de vuelo crítico en C++ para el dron de reparto <b>MK30 de Amazon Prime Air</b>, sobre la plataforma de tiempo real TI C2000, bajo <b>DO-178C</b> y la norma de codificación JSF AV C++.</li>
+                <li>Diseño y ejecución de <b>unas 500 pruebas unitarias</b> con VectorCAST en 3 proyectos, en un equipo de 10–15 ingenieros.</li>
+                <li>Detección y reporte de <b>unos 100 defectos</b> en código de vuelo antes de su certificación.</li>
+                <li>Participación en la <b>certificación</b> del producto: documentación para auditorías DO-178C (TD, SVCPS, SVR).</li>
+                <li>Análisis de código de bajo nivel y de la salida del compilador para verificar memoria y rendimiento en tiempo real en el target.</li>
+                <li>Trabajo diario en un codebase Git de gran tamaño con revisión de código mediante pull requests.</li>
+              </ul>
+              <div class="tags"><span>C++</span><span>DO-178C</span><span>JSF AV C++</span><span>VectorCAST</span><span>TI C2000</span><span>Git</span></div>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-meta">
+              <span class="date" data-lang="en">Jan 2025 – Apr 2025</span><span class="date" data-lang="es">Ene. 2025 – Abr. 2025</span>
+              <span>Ibi (Alicante), <span data-lang="en">Spain</span><span data-lang="es">España</span></span>
+            </div>
+            <div>
+              <h3 data-lang="en">Robotics Engineer · Internship</h3><h3 data-lang="es">Ingeniero Robótico · Prácticas</h3>
+              <p class="org">AIJU · <span data-lang="en">Technological Institute for Children's Products and Leisure</span><span data-lang="es">Instituto Tecnológico de Producto Infantil y Ocio</span></p>
+              <ul data-lang="en">
+                <li>Built a computer vision system (Python, OpenCV, YOLO) that classifies screws by radius and length and computes their centre, so a <b>Universal Robots</b> arm with an MSC gripper can locate and pick them.</li>
+                <li>Integrated a Photonicsens camera, gripper and robot in a project showcasing several use cases; worked with several UR models.</li>
+                <li>Improved the system over successive iterations until it met its goal in the demonstrations.</li>
+              </ul>
+              <ul data-lang="es">
+                <li>Desarrollo de un sistema de visión artificial (Python, OpenCV, YOLO) que clasifica tornillos por radio y longitud y calcula su centro para que un brazo <b>Universal Robots</b> con pinza MSC los localice y los coja.</li>
+                <li>Integración de cámara Photonicsens, pinza y robot en un proyecto que mostraba varios casos de uso; trabajo con distintos modelos de UR.</li>
+                <li>Mejora del sistema mediante iteraciones sucesivas hasta cumplir su objetivo en las demostraciones.</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>Universal Robots</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section education">
-      <div class="section-head reveal">
-        <div class="section-label">05 / EDUCATION</div>
-        <h2>Learning never<br><em>stops.</em></h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal"><span>2025 — PRESENT</span><h3>MSc Biomedical Engineering</h3><p>Universidad Internacional de Valencia</p></div>
-        <div class="edu-card reveal"><span>2020 — 2025</span><h3>BSc Robotics Engineering</h3><p>University of Alicante</p></div>
-        <div class="edu-card reveal"><span>AUG — DEC 2023</span><h3>Erasmus+ KA131</h3><p>Luleå University of Technology · Sweden</p></div>
-        <div class="edu-card reveal"><span>2023 — 2024</span><h3>European Study in Interactive Industrial Design</h3><p>University of Alicante</p></div>
-      </div>
-    </section>
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker"><span data-lang="en">Projects</span><span data-lang="es">Proyectos</span></p>
+          <h2 class="section-title" data-lang="en">Things I've built</h2>
+          <h2 class="section-title" data-lang="es">Lo que he construido</h2>
+          <p class="section-intro" data-lang="en">Hardware, firmware and software I designed and built, with the details on each page.</p>
+          <p class="section-intro" data-lang="es">Hardware, firmware y software que he diseñado y construido, con los detalles en cada página.</p>
+        </div>
+        <div class="projects">
+          <a class="project featured reveal" href="exoskeleton.html">
+            <div class="project-media">
+              <img src="assets/exo/assembled-assistive.jpg" alt="3D-printed pediatric upper-limb exoskeleton prototype with elastic bands" loading="lazy">
+              <span class="badge" data-lang="en">Bachelor's thesis</span><span class="badge" data-lang="es">TFG</span>
+            </div>
+            <div class="project-body">
+              <p class="meta">2024 – 2025 · <span data-lang="en">University of Alicante · HURO group</span><span data-lang="es">Universidad de Alicante · grupo HURO</span></p>
+              <h3 data-lang="en">Pediatric upper-limb exoskeleton</h3><h3 data-lang="es">Exoesqueleto pediátrico de miembro superior</h3>
+              <p data-lang="en">A passive, adjustable rehabilitation orthosis for children aged 7 to 17. I designed and 3D-printed it, sensorised it with 7 IMUs on an ESP32, computed joint angles with sensor fusion, validated the kinematics in MATLAB and connected it to a VR rehabilitation game.</p>
+              <p data-lang="es">Una órtesis de rehabilitación pasiva y ajustable para niños de 7 a 17 años. La diseñé e imprimí en 3D, la sensoricé con 7 IMU sobre una ESP32, calculé los ángulos articulares con fusión de sensores, validé la cinemática en MATLAB y la conecté a un juego de rehabilitación en realidad virtual.</p>
+              <div class="tags"><span>ESP32</span><span>C++</span><span>7× IMU · I²C</span><span>MATLAB</span><span>3D printing</span></div>
+              <span class="more"><span data-lang="en">Read the case study</span><span data-lang="es">Ver el proyecto</span> →</span>
+            </div>
+          </a>
 
-    <section id="contact" class="section contact">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">06 / CONTACT</p>
-        <h2>Let's build something<br><em>interesting.</em></h2>
-        <p>Interested in robotics, software engineering, embedded systems or graphics? I'd be happy to talk.</p>
-        <a class="email" href="mailto:alejandrocarrillo04@gmail.com">alejandrocarrillo04@gmail.com <span>↗</span></a>
-        <div class="socials">
-          <a href="https://linkedin.com/in/acarrilloc" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/alejandroccarrillo" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="project reveal" href="lidar.html">
+            <div class="project-media">
+              <svg viewBox="0 0 560 350" role="img" aria-label="Lidar engine architecture: one codebase builds client, server and editor">
+                <rect class="dg-bg" width="560" height="350"/>
+                <rect class="dg-box dark" x="180" y="34" width="200" height="56" rx="10"/><text class="dg-w" x="280" y="60" text-anchor="middle">Shared C++23 core</text><text class="dg-ws" x="280" y="77" text-anchor="middle">ECS · EnTT · glTF</text>
+                <path class="dg-line" d="M230 90 V140 H110 V170"/><path class="dg-line" d="M280 90 V170"/><path class="dg-line" d="M330 90 V140 H450 V170"/>
+                <rect class="dg-box" x="40" y="170" width="140" height="62" rx="10"/><text class="dg-t" x="110" y="197" text-anchor="middle">Client</text><text class="dg-s" x="110" y="215" text-anchor="middle">deferred + DDGI</text>
+                <rect class="dg-box acc" x="210" y="170" width="140" height="62" rx="10"/><text class="dg-t" x="280" y="197" text-anchor="middle">Server</text><text class="dg-s" x="280" y="215" text-anchor="middle">20 Hz fixed tick</text>
+                <rect class="dg-box" x="380" y="170" width="140" height="62" rx="10"/><text class="dg-t" x="450" y="197" text-anchor="middle">Editor</text><text class="dg-s" x="450" y="215" text-anchor="middle">ImGui · ImPlot</text>
+                <path class="dg-line" d="M180 268 H380" stroke-dasharray="4 4"/><text class="dg-s" x="280" y="290" text-anchor="middle">typed packets · GameNetworkingSockets</text>
+                <text class="dg-s" x="280" y="320" text-anchor="middle">profiling: Tracy · logging: spdlog</text>
+              </svg>
+              <span class="badge" data-lang="en">Personal project</span><span class="badge" data-lang="es">Proyecto personal</span>
+            </div>
+            <div class="project-body">
+              <p class="meta">2025 – <span data-lang="en">ongoing · team of 2</span><span data-lang="es">en curso · equipo de 2</span></p>
+              <h3 data-lang="en">Lidar · C++23 graphics engine</h3><h3 data-lang="es">Lidar · motor gráfico en C++23</h3>
+              <p data-lang="en">An engine with an ECS architecture, deferred rendering and real-time global illumination in compute shaders, plus a client-server network layer. Built in pair programming.</p>
+              <p data-lang="es">Un motor con arquitectura ECS, renderizado diferido e iluminación global en tiempo real en compute shaders, más una capa de red cliente-servidor. Desarrollado en pair programming.</p>
+              <div class="tags"><span>C++23</span><span>OpenGL</span><span>EnTT</span><span>Networking</span></div>
+              <span class="more"><span data-lang="en">See the architecture</span><span data-lang="es">Ver la arquitectura</span> →</span>
+            </div>
+          </a>
+
+          <a class="project reveal" href="vision.html">
+            <div class="project-media">
+              <svg viewBox="0 0 560 350" role="img" aria-label="Vision pipeline: camera, YOLO detection, measurement and pick with a Universal Robots arm">
+                <rect class="dg-bg" width="560" height="350"/>
+                <rect class="dg-box" x="30" y="140" width="110" height="70" rx="10"/><text class="dg-t" x="85" y="170" text-anchor="middle">Camera</text><text class="dg-s" x="85" y="188" text-anchor="middle">Photonicsens</text>
+                <rect class="dg-box acc" x="165" y="140" width="110" height="70" rx="10"/><text class="dg-t" x="220" y="170" text-anchor="middle">Detect</text><text class="dg-s" x="220" y="188" text-anchor="middle">YOLO</text>
+                <rect class="dg-box" x="300" y="140" width="110" height="70" rx="10"/><text class="dg-t" x="355" y="170" text-anchor="middle">Measure</text><text class="dg-s" x="355" y="188" text-anchor="middle">OpenCV</text>
+                <rect class="dg-box dark" x="435" y="140" width="100" height="70" rx="10"/><text class="dg-w" x="485" y="170" text-anchor="middle">Pick</text><text class="dg-ws" x="485" y="188" text-anchor="middle">UR + MSC</text>
+                <path class="dg-line" d="M140 175 H160"/><path class="dg-arrow" d="M160 170 l6 5 -6 5z"/>
+                <path class="dg-line" d="M275 175 H295"/><path class="dg-arrow" d="M295 170 l6 5 -6 5z"/>
+                <path class="dg-line" d="M410 175 H430"/><path class="dg-arrow" d="M430 170 l6 5 -6 5z"/>
+                <text class="dg-s" x="280" y="250" text-anchor="middle">classify by radius and length → centre → grasp</text>
+              </svg>
+              <span class="badge" data-lang="en">Internship · AIJU</span><span class="badge" data-lang="es">Prácticas · AIJU</span>
+            </div>
+            <div class="project-body">
+              <p class="meta">2025 · <span data-lang="en">Applied robotics</span><span data-lang="es">Robótica aplicada</span></p>
+              <h3 data-lang="en">Vision-guided pick-and-place</h3><h3 data-lang="es">Pick-and-place guiado por visión</h3>
+              <p data-lang="en">Detecting and classifying screws by radius and length, then computing their centre so a Universal Robots arm can pick them with an MSC gripper.</p>
+              <p data-lang="es">Detección y clasificación de tornillos por radio y longitud, y cálculo de su centro para que un brazo Universal Robots los coja con una pinza MSC.</p>
+              <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>Universal Robots</span></div>
+              <span class="more"><span data-lang="en">See the pipeline</span><span data-lang="es">Ver el sistema</span> →</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-  </main>\n  <footer>
-    <span>© <span id="year"></span> Alejandro Carrillo Cerdá</span>
-    <span>ROBOTICS / SOFTWARE / SYSTEMS</span>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker"><span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></p>
+          <h2 class="section-title" data-lang="en">What I work with</h2>
+          <h2 class="section-title" data-lang="es">Con qué trabajo</h2>
+          <p class="section-intro" data-lang="en">Levels are honest: "academic" means used at university, not in production.</p>
+          <p class="section-intro" data-lang="es">Los niveles son honestos: "académico" significa usado en la universidad, no en producción.</p>
+        </div>
+        <div class="skills">
+          <div class="skill reveal"><h3><span>01</span><span data-lang="en">Languages</span><span data-lang="es">Lenguajes</span></h3>
+            <ul><li>C++ <small>· C++03 certified, C++23 modern</small></li><li>C</li><li>Python <small data-lang="en">· vision and tooling</small><small data-lang="es">· visión y herramientas</small></li><li>MATLAB</li></ul></div>
+          <div class="skill reveal"><h3><span>02</span><span data-lang="en">Safety-critical</span><span data-lang="es">Software crítico</span></h3>
+            <ul><li>DO-178C</li><li>JSF AV C++</li><li>VectorCAST</li><li data-lang="en">Certification documentation</li><li data-lang="es">Documentación de certificación</li></ul></div>
+          <div class="skill reveal"><h3><span>03</span><span data-lang="en">Embedded</span><span data-lang="es">Embebido</span></h3>
+            <ul><li>TI C2000</li><li>ESP32 / Arduino</li><li>I²C · IMU sensors</li><li data-lang="en">Compiler-output analysis</li><li data-lang="es">Análisis de salida del compilador</li></ul></div>
+          <div class="skill reveal"><h3><span>04</span><span data-lang="en">Robotics & vision</span><span data-lang="es">Robótica y visión</span></h3>
+            <ul><li>Universal Robots · ABB RobotStudio</li><li data-lang="en">Denavit-Hartenberg kinematics · sensor fusion</li><li data-lang="es">Cinemática Denavit-Hartenberg · fusión de sensores</li><li>OpenCV · YOLO · PyTorch</li><li>ROS 1 <small data-lang="en">· academic</small><small data-lang="es">· académico</small></li></ul></div>
+          <div class="skill reveal"><h3><span>05</span><span data-lang="en">Graphics & networking</span><span data-lang="es">Gráficos y redes</span></h3>
+            <ul><li>OpenGL · compute shaders</li><li>ECS · EnTT</li><li>GameNetworkingSockets</li><li>ImGui · ImPlot · Tracy · spdlog</li></ul></div>
+          <div class="skill reveal"><h3><span>06</span><span data-lang="en">Tools</span><span data-lang="es">Herramientas</span></h3>
+            <ul><li>Git · GitHub · SmartGit</li><li>Autodesk Inventor · AutoCAD</li><li data-lang="en">3D printing</li><li data-lang="es">Impresión 3D</li><li>Claude Code · Copilot · Gemini · Codex</li><li>Linux <small data-lang="en">· academic</small><small data-lang="es">· académico</small></li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION + LEADERSHIP ================= -->
+    <section class="section">
+      <div class="wrap two-col">
+        <div class="card reveal">
+          <p class="kicker"><span data-lang="en">Education</span><span data-lang="es">Formación</span></p>
+          <div class="entry"><b data-lang="en">BSc Robotics Engineering</b><b data-lang="es">Grado en Ingeniería Robótica</b><span data-lang="en">University of Alicante</span><span data-lang="es">Universidad de Alicante</span><span class="when">2020 – 2025</span>
+            <p data-lang="en">Erasmus+ semester at Luleå University of Technology, Sweden (Aug – Dec 2023).</p><p data-lang="es">Semestre Erasmus+ en Luleå University of Technology, Suecia (ago. – dic. 2023).</p></div>
+          <div class="entry"><b data-lang="en">MSc Biomedical Engineering</b><b data-lang="es">Máster en Ingeniería Biomédica</b><span>Universidad Internacional de Valencia</span><span class="when" data-lang="en">2025 – in progress</span><span class="when" data-lang="es">2025 – en curso</span></div>
+          <div class="entry"><b data-lang="en">European Study in Interactive Industrial Design</b><b data-lang="es">Estudio Europeo de Diseño Industrial Interactivo</b><span data-lang="en">University of Alicante</span><span data-lang="es">Universidad de Alicante</span><span class="when">2023 – 2024</span></div>
+          <div class="entry"><b data-lang="en">Project Management course</b><b data-lang="es">Curso de Gestión de Proyectos</b><span>PMI</span><span class="when" data-lang="en">April 2024</span><span class="when" data-lang="es">Abril 2024</span></div>
+        </div>
+        <div class="card reveal">
+          <p class="kicker"><span data-lang="en">Leadership & volunteering</span><span data-lang="es">Liderazgo y voluntariado</span></p>
+          <div class="entry"><b data-lang="en">Coordinator · youth association</b><b data-lang="es">Coordinador · asociación juvenil</b><span class="when" data-lang="en">2026 – present · monitor for 8 years before</span><span class="when" data-lang="es">2026 – actualidad · 8 años antes como monitor</span>
+            <p data-lang="en">I lead a team of about 30 volunteer monitors: planning activities and camps, managing budget and permits, training new monitors and liaising with families.</p>
+            <p data-lang="es">Coordino un equipo de unos 30 monitores voluntarios: planificación de actividades y campamentos, gestión de presupuesto y permisos, formación de monitores nuevos y relación con las familias.</p></div>
+          <div class="entry"><b data-lang="en">Volunteer · soup kitchen</b><b data-lang="es">Voluntario · comedor social</b><span>Zaragoza</span><span class="when" data-lang="en">2 summers</span><span class="when" data-lang="es">2 veranos</span></div>
+          <div class="entry"><b data-lang="en">Languages</b><b data-lang="es">Idiomas</b>
+            <div class="lang-row"><span data-lang="en">Spanish · native</span><span data-lang="es">Castellano · nativo</span><span data-lang="en">English · B2, daily professional use</span><span data-lang="es">Inglés · B2, uso profesional diario</span><span data-lang="en">Valencian · B1</span><span data-lang="es">Valenciano · B1</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <div>
+            <h2 data-lang="en">Let's talk.</h2><h2 data-lang="es">Hablemos.</h2>
+            <p data-lang="en">I'm open to robotics, embedded C/C++ and medical robotics roles in Spain, across Europe or remote. The fastest way to reach me is email.</p>
+            <p data-lang="es">Estoy abierto a puestos de robótica, C/C++ embebido y robótica médica en España, en Europa o en remoto. La forma más rápida de contactarme es el email.</p>
+          </div>
+          <div class="contact-list">
+            <a href="mailto:alejandrocarrillo04@gmail.com"><span>alejandrocarrillo04@gmail.com</span><small>EMAIL</small></a>
+            <a href="https://linkedin.com/in/acarrilloc" target="_blank" rel="noopener"><span>linkedin.com/in/acarrilloc</span><small>LINKEDIN</small></a>
+            <a href="https://github.com/alejandroccarrillo" target="_blank" rel="noopener"><span>github.com/alejandroccarrillo</span><small>GITHUB</small></a>
+            <a href="Alejandro_Carrillo_CV_EN.pdf" data-href-en="Alejandro_Carrillo_CV_EN.pdf" data-href-es="Alejandro_Carrillo_CV_ES.pdf" target="_blank" rel="noopener"><span data-lang="en">Download CV (PDF)</span><span data-lang="es">Descargar CV (PDF)</span><small>PDF</small></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Alejandro Carrillo Cerdá</span>
+      <span data-lang="en">Robotics · Embedded · Software</span><span data-lang="es">Robótica · Embebido · Software</span>
+    </div>
   </footer>
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
